@@ -1,258 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Autofix - Auto Maintenance & Repair Service</title>
 
     <!-- Meta Tags -->
 
-    <meta name="title" content="Autofix - Auto Maintenance & Repair Service">
-    <meta name="description" content="This is a car repair website coded by Daniyal Muhammad Khan">
+    <meta name="title" content="Autofix - Auto Maintenance & Repair Service" />
+    <meta
+      name="description"
+      content="This is a car repair website coded by Daniyal Muhammad Khan"
+    />
 
     <!-- Favicon  -->
 
-    <link rel="shortcut icon" href="favicon.svg" type="image/xml+svg">
+    <link rel="shortcut icon" href="favicon.svg" type="image/xml+svg" />
 
     <!-- Google Fonts Links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Material Icons Link -->
 
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0"
+    />
 
     <!-- Custom CSS Link -->
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!-- Preloader Images -->
 
-    <link rel="preload" as="image" href="./assets/images/hero-banner.png">
-    <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
-</head>
-<body>
-
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+    <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
+  </head>
+  <body>
     <!-- Header -->
 
-    <header class="header" aria-label="header ">            
+    <header class="header" aria-label="header ">
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo.png"
+            width="128"
+            height="63"
+            alt="autofix home"
+          />
+        </a>
 
-        <div class="container">
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Services</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Projects</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
 
-            <a href="#" class="logo">
-                <img src="./assets/images/logo.png" width="128" height="63" alt="autofix home">
-            </a>
+        <a href="#" class="btn btn-primary">
+          <span class="span">Get a Quote</span>
 
-            <nav class="navbar" data-navbar>
-                <ul class="navbar-list">
-                    <li>
-                        <a href="#" class="nav-link">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link">About</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link">Services</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+          <span class="material-symbols-rounded">arrow_forward</span>
+        </a>
 
-            <a href="#" class="btn btn-primary">
-                <span class="span">Get a Quote</span>
-
-                <span class="material-symbols-rounded">arrow_forward</span> 
-            </a>
-
-            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-                <span class="nav-toggle-icon icon1"></span>
-                <span class="nav-toggle-icon icon2"></span>
-                <span class="nav-toggle-icon icon3"></span>
-            </button>
-
-
-
-
-        </div>
+        <button
+          class="nav-toggle-btn"
+          aria-label="toggle menu"
+          data-nav-toggler
+        >
+          <span class="nav-toggle-icon icon1"></span>
+          <span class="nav-toggle-icon icon2"></span>
+          <span class="nav-toggle-icon icon3"></span>
+        </button>
+      </div>
     </header>
 
     <main>
+      <article>
+        <!-- Hero -->
+        <section
+          class="hero section has-bg-image"
+          style="background-image: url(./assets/images/hero-bg.jpg)"
+          aria-label="hero"
+        >
+          <div class="container">
+            <div class="hero-content">
+              <p class="section-subtitle :dark">
+                We have talented engineers & mechanics
+              </p>
 
-        <article>
+              <h1 class="h1 section-title">
+                Auto Maintenance & Repair Service
+              </h1>
 
-            <!-- Hero -->
-            <section class="hero section has-bg-image" style="background-image: url(./assets/images/hero-bg.jpg);"  aria-label="hero">
+              <p class="section-text hero-text">
+                From routine check-ups to complex repairs, our certified
+                technicians are here to ensure your car is always road ready.
+              </p>
 
-                <div class="container">
+              <a href="#" class="btn btn-primary">
+                <span class="span">Our Services</span>
 
-                    <div class="hero-content">
-                        <p class="section-subtitle :dark">
-                            We have talented engineers & mechanics
-                        </p>
-
-                        <h1 class="h1 section-title">
-                            Auto Maintenance & Repair Service
-                        </h1>
-
-                        <p class="section-text hero-text">
-                            From routine check-ups to complex repairs, our certified technicians are 
-                            here to ensure your car is always road ready.
-                        </p>
-
-                        <a href="#" class="btn btn-primary">
-                            <span class="span">Our Services</span>
-
-                            <span class="material-symbols-rounded">arrow_forward</span>
-
-                        </a>
-                    </div>
-
-                    <figure class="hero-banner" style="--width: 1228; --height: 789;">
-                        <img src="./assets/images/hero-banner.png" alt="red motor vehicle"
-                        class="moving-animation" width="1228" height="789">
-                    </figure>
-
-                </div>
-            </section>
-
-            <!-- Developer: Daniyal Muhamamd Khan -->
-
-            <section class="service section has-bg-image" aria-label="service-label"
-            style="background-image: url(./assets/images/service-bg.jpg);">
-
-            <div class="container">
-
-                <p class="section-subtitle :light" id="service-subtitle">
-                    Our services
-                </p>
-
-                <h2 class="h2 section-title">
-                    We Provide Great Services For your Vehicle
-                </h2>
-
-                <ul class="servise-list">
-
-                    <li>
-                        <div class="service-card">
-
-                            <figure class="service-icon">
-                                <img src="./assets/images/services-1.png"
-                                alt="Engine Repair" width="110" height="110" loading="lazy">
-                            </figure>
-
-                            <h3 class="h3 card-title">
-                                Engine Repair
-                            </h3>
-
-                            <p class="card-text">
-                                No need to worry; we'll handle all your engine issues.
-                            </p>
-                            <a href="#" class="card-btn-link">Read more</a>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="service-card">
-
-                            <figure class="service-icon">
-                                <img src="./assets/images/services-2.png"
-                                alt="Brake Repair" width="110" height="110" loading="lazy">
-                            </figure>
-
-                            <h3 class="h3 card-title">
-                                Brake Repair
-                            </h3>
-
-                            <p class="card-text">
-                                we'll make sure your brakes are in top condition.
-                            </p>
-                            <a href="#" class="card-btn-link">Read more</a>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="service-card">
-
-                            <figure class="service-icon">
-                                <img src="./assets/images/services-3.png"
-                                alt="Tire Repair" width="110" height="110" loading="lazy">
-                            </figure>
-
-                            <h3 class="h3 card-title">
-                                Tire Repair
-                            </h3>
-
-                            <p class="card-text">
-                                Count on us to get your tires back in top shape.
-                            </p>
-                            <a href="#" class="card-btn-link">Read more</a>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="service-card">
-
-                            <figure class="service-icon">
-                                <img src="./assets/images/services-4.png"
-                                alt="Battery Repair" width="110" height="110" loading="lazy">
-                            </figure>
-
-                            <h3 class="h3 card-title">
-                                Battery Repair
-                            </h3>
-
-                            <p class="card-text">
-                                You can trust us to keep your battery running strong.
-                            </p>
-                            <a href="#" class="card-btn-link">Read more</a>
-                        </div>
-                    </li>
-
-                    <li class="service-banner">
-                        <img src="./assets/images/services-5.png" alt="red car" class="moving-animation"
-                        width="646" height="380" loading="lazy">
-                    </li>
-
-
-                    <li>
-                        <div class="service-card">
-
-                            <figure class="service-icon">
-                                <img src="./assets/images/services-6.png"
-                                alt="Steering Repair" width="110" height="110" loading="lazy">
-                            </figure>
-
-                            <h3 class="h3 card-title">
-                                Steering Repair
-                            </h3>
-
-                            <p class="card-text">
-                                Let us ensure your steering wheel is smooth and reliable.
-                            </p>
-                            <a href="#" class="card-btn-link">Read more</a>
-                        </div>
-                    </li>
-                </ul>
-                
+                <span class="material-symbols-rounded">arrow_forward</span>
+              </a>
             </div>
 
-            </section>
+            <figure class="hero-banner" style="--width: 1228; --height: 789">
+              <img
+                src="./assets/images/hero-banner.png"
+                alt="red motor vehicle"
+                class="moving-animation"
+                width="1228"
+                height="789"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- Developer: Daniyal Muhamamd Khan -->
+
+        <!-- Service Section -->
+
+        <section
+          class="service section has-bg-image"
+          aria-labelledby="service-label"
+          style="background-image: url(./assets/images/service-bg.jpg)"
+        >
+          <div class="container">
+            <p class="section-subtitle :light" id="service-subtitle">
+              Our services
+            </p>
+
+            <h2 class="h2 section-title">
+              We Provide Great Services For your Vehicle
+            </h2>
+
+            <ul class="servise-list">
+              <li>
+                <div class="service-card">
+                  <figure class="service-icon">
+                    <img
+                      src="./assets/images/services-1.png"
+                      alt="Engine Repair"
+                      width="110"
+                      height="110"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="h3 card-title">Engine Repair</h3>
+
+                  <p class="card-text">
+                    We'll keep your engine running smoothly and efficiently.
+                  </p>
+                  <a href="#" class="red-link">Read more</a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <figure class="service-icon">
+                    <img
+                      src="./assets/images/services-2.png"
+                      alt="Brake Repair"
+                      width="110"
+                      height="110"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="h3 card-title">Brake Repair</h3>
+
+                  <p class="card-text">
+                    we'll make sure your brakes are in top condition.
+                  </p>
+                  <a href="#" class="red-link">Read more</a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <figure class="service-icon">
+                    <img
+                      src="./assets/images/services-3.png"
+                      alt="Tire Repair"
+                      width="110"
+                      height="110"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="h3 card-title">Tire Repair</h3>
+
+                  <p class="card-text">
+                    Count on us to get your tires back in top shape.
+                  </p>
+                  <a href="#" class="red-link">Read more</a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <figure class="service-icon">
+                    <img
+                      src="./assets/images/services-4.png"
+                      alt="Battery Repair"
+                      width="110"
+                      height="110"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="h3 card-title">Battery Repair</h3>
+
+                  <p class="card-text">
+                    You can trust us to keep your battery running strong.
+                  </p>
+                  <a href="#" class="red-link">Read more</a>
+                </div>
+              </li>
+
+              <li class="service-banner">
+                <img
+                  src="./assets/images/services-5.png"
+                  alt="red car"
+                  class="moving-animation"
+                  width="646"
+                  height="380"
+                  loading="lazy"
+                />
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <figure class="service-icon">
+                    <img
+                      src="./assets/images/services-6.png"
+                      alt="Steering Repair"
+                      width="110"
+                      height="110"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="h3 card-title">Steering Repair</h3>
+
+                  <p class="card-text">
+                    Let us ensure your steering wheel is smooth and reliable.
+                  </p>
+                  <a href="#" class="red-link">Read more</a>
+                </div>
+              </li>
+            </ul>
+
+            <a href="#" class="btn">
+              <span class="span">View All Services</span>
+              <span class="material-symbols-rounded">arrow_forward</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Anout -->
+
+        <section class="section about" aria-labelledby="about-label">
+          <div class="container">
+
+            <figure class="about-banner">
+              <img
+                src="./assets/images/about-banner.png"
+                alt="vehicle repire equipments"
+                width="540"
+                height="540"
+                loading="lazy"
+                class="w-100"
+                
+              />
+            </figure>
+
+            <div class="about-content">
+              <p class="section-subtitle :dark">About Us</p>
+
+              <h2 class="h2 section-title">
+                We’re Commited to Meet the quality
+              </h2>
+
+              <p class="about-text p1">
+                At AUTOFIX, we pride ourselves on delivering
+                exceptional service and unparalleled quality. Our team of
+                skilled professionals is dedicated to ensuring that every job
+                meets our stringent standards. We use only the finest materials
+                and the latest techniques to provide you with reliable,
+                long-lasting solutions.
+              </p>
+
+              <p class="about-text p2">
+                Whether it's routine maintenance or
+                complex repairs, our commitment to excellence drives us to
+                exceed your expectations every time.
+              </p>
+            </div>
+
+            <ul class="about-list">
+
+                <li>
+                    <p>
+                        <strong class="strong">8K+</strong>
+                        Happy Clients
+                    </p>
+                    <p>
+                        <strong class="strong">22+</strong>
+                        Instruments
+                    </p>
+                    <p>
+                        <strong class="strong">50+</strong>
+                        Years in market
+                    </p>
+                    <p>
+                        <strong class="strong">99%</strong>
+                        Projects completed
+                    </p>
+
+                </li>
+            </ul>
 
 
 
-        </article>
+          </div>
+        </section>
+      </article>
     </main>
-    
 
     <!-- Custom Js Link -->
     <script src="./assets/js/script.js"></script>
-</body>
+  </body>
 </html>
