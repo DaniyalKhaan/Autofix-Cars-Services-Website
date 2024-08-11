@@ -305,6 +305,62 @@ body {
   font-weight: var(--fw-700);
   text-transform: uppercase;
 }
+
+.w-100 {
+  width: 100%;
+}
+
+.img-holder {
+
+  aspect-ratio: var(--width) / var(--height);
+  background-color: var(--light-gray);
+  overflow: hidden;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.has-scroll-bar {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  gap: 30px;
+  scroll-snap-type: mandatory;
+  padding-block-end: 20px;
+}
+
+.scroll-item {
+  min-width: 100%;
+  scroll-snap-align: start;
+}
+
+.has-scroll-bar::-webkit-scrollbar {
+  height: 16px;
+}
+
+.has-scroll-bar::-webkit-scrollbar-track {
+  background-color: var(--pastel-pink);
+  border-radius: 20px;
+}
+
+.has-scroll-bar::-webkit-scrollbar-thumb {
+  background-color: var(--international-orange-engineering);
+  border-radius: 20px;
+  border: 3px solid var(--pastel-pink);
+}
+
+.has-scroll-bar::-webkit-scrollbar-button {
+  width: 15%;
+}
+
+
+
+
+
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -504,21 +560,106 @@ body {
   #ABOUT
 \*-----------------------------------*/
 
-.about .container{
-  background-color: var(--oxford-blue-1);
-  display: grid;
-  gap: 60px;
+.about {
+  background-color: var(--space-cadet);
+  color: var(--white);
+  text-align: center;
 }
 
-.about-banner img {
-  width: 100%;
+.about .container {
+  display: grid;
+  gap: 50px;
 }
+
+
+.about .section-title {
+  color: var(--white);
+}
+
+.about-text {
+  margin-block: 12px 8px;
+}
+
+
+.about-list {
+  display: grid;
+  gap: 25px;
+  
+}
+
+.about-item {
+  background-color: var(--oxford-blue-2);
+  padding: 40px 20px;
+  transition: var(--transition);
+}
+
+.about-item:is(:hover, :focus-visible) {
+  background-color: var(--international-orange-engineering);
+  transform: translateY(-10px);
+}
+
+.about .strong {
+  display: block;
+  line-height: 1.1;
+}
+
+
+
 
 
 
 /*-----------------------------------*\
   #WORK
 \*-----------------------------------*/
+
+
+.work .container {
+  padding-inline: 0;
+}
+
+.work .section-title {
+  margin-block-end: 24px;
+}
+
+.work-card {
+  position: relative;
+}
+
+.work-card .work-card-content {
+  background-color: var(--white);
+  max-width: 90%;
+  margin-inline: auto;
+  padding: 30px 10px;
+  text-align: center;
+  position: relative;
+  box-shadow: var(--shadow);
+  margin-block-start: -60px;
+
+}
+
+.work-card .card-subtitle {
+  font-family: var(--ff-chakra-petch);
+  font-weight: var(--fw-700);
+  color: var(--international-orange-engineering);
+  margin-block-end: 5px;
+  text-transform: uppercase;
+}
+
+.work-card .card-title {
+  margin-block-end: 10px;
+}
+
+.work-card .card-btn {
+  background-color: var(--international-orange-engineering);
+  color: var(--white);
+  margin-inline: auto;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-circle);
+  display: grid;
+  place-items: center;
+}
+
 
 
 
@@ -529,7 +670,79 @@ body {
 \*-----------------------------------*/
 
 
+.footer {
+  color: var(--cadet-blue-creyola);
+}
 
+.footer .shape {
+  display: none;
+}
+
+.footer-top {
+  background-color: var(--space-cadet);
+}
+
+.footer-top .container {
+  display: grid;
+  gap: 35px;
+}
+
+.footer-brand .footer-text {
+  margin-block: 18px 20px;
+}
+
+.footer-brand .social-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-list .social-link {
+  padding: 14px;
+  background-color: var(--oxford-blue-3);
+  border-radius: var(--radius-circle);
+  transition: var(--transition);
+}
+
+.social-link:is(:hover, :focus-visible) {
+  background-color: var(--international-orange-engineering);
+  transform: translateY(-5px);
+}
+
+
+.footer-list .h3 {
+  color: var(--white);
+  margin-block-end: 18px;
+}
+
+.footer-list .p {
+  color: var(--white);
+  margin-block: 7px;
+  font-weight: var(--fw-400);
+}
+
+.footer-list li:not(:first-child) {
+  margin-block-start: 16px;
+}
+
+.footer-list .footer-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-link:is(:hover, :focus-visible) {
+  color: var(--international-orange-engineering);
+}
+
+.footer-link .material-symbols-rounded {
+  color: var-international-orange-engineering);
+  font-size: 2;
+}
+
+
+
+ 
 
 
 /*-----------------------------------*\
