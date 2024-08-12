@@ -736,15 +736,151 @@ body {
 }
 
 .footer-link .material-symbols-rounded {
-  color: var-international-orange-engineering);
-  font-size: 2;
+  color: var(--international-orange-engineering);
+  font-size: 1.8rem;
+  flex-shrink: 0;
 }
 
 
+.footer-bottom {
+  background-color: var(--oxford-blue-2);
+  padding-block: 20px;
+}
 
- 
+.footer-bottom .copyright {
+  text-align: center;
+  font-size: var(--fs-5);
+}
+
+
 
 
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+
+
+/* for larger than 575px screens */
+
+@media (min-width: 575px) {
+
+  /* Custom properties */
+
+  :root {
+  --fs-2: 4rem;
+  --fs-3: 2.8rem;
+  --fs-4: 2rem;
+  }
+
+  .container {
+  
+    max-width: 540px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  .section-subtitle {
+    --fs-5: 1.6rem;
+  }
+
+  .h2 {
+    font-weight: 700;
+  }
+
+
+  /* HERO */
+
+  .hero .container {
+    max-width: unset;
+  }
+
+  .hero-content {
+    max-width: 520px;
+    margin-inline: auto;
+  }
+
+  .hero .section-text {
+    font-size: 1.8rem;
+  }
+
+
+/*   Services */
+
+.service .section-title {
+  margin-block-end: 30px;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-block-end: 40px;
+}
+
+.service-card .card-text {
+  max-width: 220px;
+  margin-inline: auto;
+}
+
+
+/* About */
+
+
+.about .about-text {
+  font-size: 18px;
+}
+
+.about-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.about-item {
+  padding: 20px;
+}
+
+
+/* Work */
+
+
+.scroll-item {
+  min-width: calc(50% - 15px);
+}
+
+
+/* Fotter */
+
+.footer-top {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-top .container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-top .shape-3 {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+}
+
+
+  
+}
+
+
+
+/* RESPONSIVE FOR LARGER THAN 768 px SCREENS */
+
+@media (min-width: 768px) {
+
+
+}
+  
+
+
+
